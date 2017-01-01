@@ -11,8 +11,8 @@ else
     cd .git-temp
 fi
 
-rsync -a --include "*.cs" "./Sources/Sandbox.Common/ModAPI/" "./stub/Sandbox.Common"
-rsync -a --include "*.cs" "./Sources/VRage.Library/" "./stub/VRage.Library"
-rsync -a --include "*.cs" "./Sources/VRage.Math/" "./stub/VRage.Math"
-rsync -a --include "*.cs" "./Sources/VRage/" "./stub/VRage"
+rsync -a --include "*.cs" "./Sources/Sandbox.Common/ModAPI/" "./../stub/Sandbox.Common"
+rsync -a --include "*.cs" "./Sources/VRage.Library/" "./../stub/VRage.Library"
+rsync -a --include "*.cs" "./Sources/VRage.Math/" "./../stub/VRage.Math"
+rsync -a --include "*.cs" "./Sources/VRage/" "./../stub/VRage"
 
