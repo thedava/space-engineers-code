@@ -1,6 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Partials/GetBlockWithName.cs">
+    <Files>
+      <File FileName="StorageOverview.cs" Line="121" Column="6" />
+      <File FileName="create-stubs.sh" Line="17" Column="1" />
+      <File FileName="Partials/GetBlockWithName.cs" Line="8" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

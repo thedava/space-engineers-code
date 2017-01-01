@@ -9,6 +9,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>SpaceEngineers</RootNamespace>
     <AssemblyName>SpaceEngineers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
@@ -29,9 +31,24 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="StorageOverview.cs" />
+    <Compile Include="Partials\GetBlockWithName.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="create-stubs.sh" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Partials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Stubs.csproj">
+      <Project>{EF2E1094-3710-4759-901E-EB090A8FE652}</Project>
+      <Name>Stubs</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

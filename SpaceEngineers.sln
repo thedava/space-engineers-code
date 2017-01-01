@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceEngineers", "SpaceEngineers.csproj", "{72379713-8EE7-439C-A773-43768E15B10C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stubs", "Stubs.csproj", "{EF2E1094-3710-4759-901E-EB090A8FE652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{72379713-8EE7-439C-A773-43768E15B10C}.Debug|x86.Build.0 = Debug|x86
 		{72379713-8EE7-439C-A773-43768E15B10C}.Release|x86.ActiveCfg = Release|x86
 		{72379713-8EE7-439C-A773-43768E15B10C}.Release|x86.Build.0 = Release|x86
+		{EF2E1094-3710-4759-901E-EB090A8FE652}.Debug|x86.ActiveCfg = Debug|x86
+		{EF2E1094-3710-4759-901E-EB090A8FE652}.Debug|x86.Build.0 = Debug|x86
+		{EF2E1094-3710-4759-901E-EB090A8FE652}.Release|x86.ActiveCfg = Release|x86
+		{EF2E1094-3710-4759-901E-EB090A8FE652}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = SpaceEngineers.csproj

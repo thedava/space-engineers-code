@@ -11,8 +11,11 @@ else
     cd .git-temp
 fi
 
-rsync -a --include "*.cs" "./Sources/Sandbox.Common/ModAPI/" "./../stub/Sandbox.Common"
-rsync -a --include "*.cs" "./Sources/VRage.Library/" "./../stub/VRage.Library"
-rsync -a --include "*.cs" "./Sources/VRage.Math/" "./../stub/VRage.Math"
-rsync -a --include "*.cs" "./Sources/VRage/" "./../stub/VRage"
+function sync_source {
+	rsync -a --include "*.cs" "./Sources/${1}" "./../Stubs/${1}" && echo "Synchronized ${1}" || echo "Synchronization of ${1} failed"
+}
 
+sync_source "Sandbox.Common"
+sync_source "VRage.Library"
+sync_source "VRage.Math"
+sync_source "VRage"
